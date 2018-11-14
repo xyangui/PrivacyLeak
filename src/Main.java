@@ -24,8 +24,6 @@ public class Main {
         Movie movie = new Movie("Iron Man");
         Member Ivan = new Member(movie);
 
-        System.out.println(Ivan.getFavouriteMovie().getTitle());
-
         Member Daniel = new Member(movie);
         Daniel.setFavouriteMovieTitle("Spider Man");
 
@@ -46,8 +44,6 @@ public class Main {
 
         Movie movie = new Movie("Iron Man");
         Member Ivan = new Member(movie);
-
-        System.out.println(Ivan.getFavouriteMovie().getTitle());
 
         Member Daniel = new Member(Ivan);
         Daniel.setFavouriteMovieTitle("Spider Man");
@@ -70,8 +66,6 @@ public class Main {
 
         String movieTitle = "Iron Man";
         Movie movie1 = new Movie(movieTitle);
-
-        System.out.println(movie1.getTitle());
 
         Movie movie2 = new Movie(movieTitle);
         movie2.setTitle("Spider Man");
