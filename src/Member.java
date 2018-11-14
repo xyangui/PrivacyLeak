@@ -8,7 +8,7 @@ public class Member {
     }
 
     public Member(Member member) {
-        this.favouriteMovie = member.favouriteMovie;
+        this.favouriteMovie = member.getFavouriteMovie();
     }
 
     public Movie getFavouriteMovie() {
