@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //question1();
+        question1();
 
-        question2();
+        //question2();
 
         //question3();
 
@@ -26,6 +26,7 @@ public class Main {
 
         System.out.println(Ivan.getFavouriteMovie().getTitle());
 
+        //Movie movie1 = new Movie("Iron Man");
         Member Daniel = new Member(movie);
         Daniel.setFavouriteMovieTitle("Spider Man");
 
@@ -40,10 +41,6 @@ public class Main {
         movie2.setTitle("Spider Man");
 
         System.out.println(movie1.getTitle());
-
-        movie1.setTitle("Iron Man");
-
-        System.out.println(movie2.getTitle());
     }
 
     public static void question3(){
@@ -61,10 +58,11 @@ public class Main {
 
     public static void question4(){
 
-        Member Daniel = new Member(new Movie("Iron Man"));
+        Movie movie = new Movie("Iron Man");
+        Member Daniel = new Member(movie);
 
-        Movie movie = Daniel.getFavouriteMovie();
-        movie.setTitle("Spider Man");
+        Movie movie1 = Daniel.getFavouriteMovie();
+        movie1.setTitle("Spider Man");
 
         System.out.println(Daniel.getFavouriteMovie().getTitle());
     }
