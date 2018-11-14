@@ -10,7 +10,7 @@ public class Main {
 
         question2();
 
-        question3();
+        //question3();
 
         //question4();
 
@@ -34,6 +34,20 @@ public class Main {
 
     public static void question2(){
 
+        Movie movie1 = new Movie("Iron Man");
+
+        Movie movie2 = movie1;
+        movie2.setTitle("Spider Man");
+
+        System.out.println(movie1.getTitle());
+
+        movie1.setTitle("Iron Man");
+
+        System.out.println(movie2.getTitle());
+    }
+
+    public static void question3(){
+
         Movie movie = new Movie("Iron Man");
         Member Ivan = new Member(movie);
 
@@ -43,16 +57,6 @@ public class Main {
         Daniel.setFavouriteMovieTitle("Spider Man");
 
         System.out.println(Ivan.getFavouriteMovie().getTitle());
-    }
-
-    public static void question3(){
-
-        Movie movie1 = new Movie("Iron Man");
-
-        Movie movie2 = movie1;
-        movie2.setTitle("Spider Man");
-
-        System.out.println(movie1.getTitle());
     }
 
     public static void question4(){

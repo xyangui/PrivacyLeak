@@ -9,7 +9,6 @@ public class Member {
 
     public Member(Member member) {
         this.favouriteMovie = member.favouriteMovie;
-        //this.favouriteMovie = member.getFavouriteMovie();
     }
 
     public Movie getFavouriteMovie() {
@@ -25,7 +24,15 @@ public class Member {
     }
 
 
+
+//    public Member(Member member) {
+//        this.favouriteMovie = member.getFavouriteMovie();
+//    }
+
+
+
 //    public Movie getFavouriteMovie() {
 //        return new Movie(favouriteMovie.getTitle());
 //    }
+
 }
