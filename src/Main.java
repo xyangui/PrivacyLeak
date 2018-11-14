@@ -24,7 +24,6 @@ public class Main {
         Movie movie = new Movie("Iron Man");
         Member Ivan = new Member(movie);
 
-        //Movie movie1 = new Movie("Iron Man");
         Member Daniel = new Member(movie);
         Daniel.setFavouriteMovieTitle("Spider Man");
 
