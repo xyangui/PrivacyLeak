@@ -3,8 +3,8 @@ public class Member {
 
     private Movie favouriteMovie;
 
-    public Member(Movie favouriteMovie) {
-        this.favouriteMovie = favouriteMovie;
+    public Member(Movie movie) {
+        this.favouriteMovie = movie;
     }
 
     public Member(Member member) {
@@ -15,12 +15,12 @@ public class Member {
         return favouriteMovie;
     }
 
-    public void setFavouriteMovie(Movie favouriteMovie) {
-        this.favouriteMovie = favouriteMovie;
+    public void setFavouriteMovie(Movie movie) {
+        this.favouriteMovie = movie;
     }
 
-    public void setFavouriteMovieTitle(String favouriteMovieTitle) {
-        favouriteMovie.setTitle(favouriteMovieTitle);
+    public void setFavouriteMovieTitle(String movieTitle) {
+        favouriteMovie.setTitle(movieTitle);
     }
 
 
