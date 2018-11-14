@@ -26,7 +26,6 @@ public class Main {
 
         System.out.println(Ivan.getFavouriteMovie().getTitle());
 
-        //Movie movie1 = new Movie("Iron Man");
         Member Daniel = new Member(movie);
         Daniel.setFavouriteMovieTitle("Spider Man");
 
