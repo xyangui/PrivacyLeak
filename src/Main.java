@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        question1();
+        //question1();
 
-        //question2();
+        ///question2();
 
         //question3();
 
@@ -17,6 +17,10 @@ public class Main {
         //question5();
 
         //question6();
+
+        question7();
+
+        question8();
     }
 
     public static void question1(){
@@ -24,6 +28,7 @@ public class Main {
         Movie movie = new Movie("Iron Man");
         Member Ivan = new Member(movie);
 
+        //Movie movie1 = new Movie("Iron Man");
         Member Daniel = new Member(movie);
         Daniel.setFavouriteMovieTitle("Spider Man");
 
@@ -82,6 +87,47 @@ public class Main {
         movieTitle2 = "Spider Man";
 
         System.out.println(movie.getTitle());
+    }
+
+    public static void question7(){
+
+        int emptyNum = 10;
+
+        for (int i = 0; i < 11; i++){
+
+           for (int j = 0; j < emptyNum; j++){
+               System.out.print(" ");
+           }
+
+           emptyNum--;
+
+           for (int j = 0; j < i * 2 + 1; j++){
+               System.out.print("1");
+           }
+           System.out.println(" ");
+       }
+    }
+
+    public static void question8(){
+
+        int emptyNum = 10;
+
+        for (int i = 0; i < 9; i++){
+
+            for (int j = 0; j < emptyNum; j++){
+                System.out.print(" ");
+            }
+
+            emptyNum--;
+
+            for (int j = 0; j < i + 1; j++){
+                System.out.print(j + 1);
+            }
+            for (int j = i; j > 0; j--){
+                System.out.print(j);
+            }
+            System.out.println(" ");
+        }
     }
 
 }

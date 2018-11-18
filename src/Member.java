@@ -11,9 +11,9 @@ public class Member {
         this.favouriteMovie = member.getFavouriteMovie();
     }
 
-    public Movie getFavouriteMovie() {
-        return favouriteMovie;
-    }
+//    public Movie getFavouriteMovie() {
+//        return favouriteMovie;
+//    }
 
     public void setFavouriteMovie(Movie movie) {
         this.favouriteMovie = movie;
@@ -25,8 +25,8 @@ public class Member {
 
 
 
-//    public Movie getFavouriteMovie() {
-//        return new Movie(favouriteMovie.getTitle());
-//    }
+    public Movie getFavouriteMovie() {
+        return new Movie(favouriteMovie.getTitle());
+    }
 
 }
